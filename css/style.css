@@ -1,0 +1,561 @@
+
+
+/* Commom CSS Area Start */
+
+*{
+    margin:0;
+    padding:0;
+}
+
+ul,ol{
+    list-style: none;
+    padding: 0;
+}
+
+/* Commom CSS Area End */
+
+
+
+nav{
+    background-color: #EEEDDE;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+  /* Navbar area start....... */
+
+nav ul li{
+    margin-left: 100px;
+    position: relative;
+}
+
+nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #203239 !important;
+    font-weight: 400;
+    transition: .4s;
+
+}
+
+nav ul li a::after {    
+    position: absolute;
+    content: "";
+
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #F6762E;
+    width: 23px;
+    height: 5px;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+nav ul li .dropdown ul li{
+    margin-left: 0;
+    margin: 2px 0px;
+    padding: 8px;
+    border-bottom: 2px solid #F6762E;
+    
+}
+
+  /* Drop-down  */
+
+nav ul li .dropdown{
+    position: absolute;
+    top: 53px;
+    left: 0px;
+    background-color: #EEEDDE;
+
+    transform: rotateX(90deg);
+    transform-origin: top;
+    transition: .4s;
+}
+
+
+  /*  Hover area  start */
+
+nav ul li a:hover:after {  
+    opacity: 1;
+}
+
+nav ul li a:hover {
+    font-weight: 600;   
+}
+
+nav ul li:hover .dropdown{
+    transform: rotateX(0deg);
+}
+
+
+
+/* Banner area start ..  */
+
+#banner-part{
+    background-color: #EEEDDE;
+}
+
+#banner-part h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 130%;
+    font-size: 46px;
+    margin-top: 100px;
+    margin-bottom: 24px;
+}
+
+#banner-part p{
+    width: 548px;
+    height:60px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+#banner-part .search-ara{
+    position: relative;
+    margin-top: 26px;
+}
+
+
+#banner-part .search-ara input{
+    width: 604px;
+    height: 41px;
+    border-radius: 15px;
+    padding: 32px 30px;
+    border: 1px solid #fff;
+}
+
+#banner-part .search-ara input::placeholder{
+    font-family: 'Poppins', sans-serif;
+    width: 350px;
+    height: 24px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 15px;
+}
+
+#banner-part .search-ara i{
+    position: absolute;
+    left: 12px;
+    top: 41%;
+    transform: translateY(-50%);
+
+    width: 24px;
+    height: 4px;
+    color: #203239;
+}
+
+
+#banner-part .search-ara button{
+    width: 140px;
+    height: 50px;
+    position: absolute;
+    right: 146px;
+    top: 47%;
+    transform: translateY(-50%);
+
+    background-color: #203239;
+    color: #fff;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+
+    -webkit-box-shadow: -1px 27px 30px -20px rgba(0,0,0,0.65);
+    -moz-box-shadow: -1px 27px 30px -20px rgba(0,0,0,0.65);
+    box-shadow: -1px 27px 30px -20px rgba(0,0,0,0.65);
+}
+
+
+   /* Box area.. */
+   #banner-part .box-number {
+    display: flex;
+    margin: 45px;
+   }
+
+   #banner-part .box-number .box{
+        width: 150px;
+        height: 144px;
+        margin: 0px 12px;
+   }
+   
+   #banner-part .box-number .box{
+    padding: 5px 10px;
+   }
+
+   #banner-part .box-number .box h2{
+    font-size: 46px;
+    font-weight: 700;
+    color: #203239;
+   }
+
+   #banner-part .box-number .box h2 span{
+        color: #FF7527;
+        font-size: 65px;
+        font-weight: 800;
+        margin-left: -13px;
+   }
+
+   #banner-part .box-number .box h5{
+    font-family: 'Poppins', sans-serif;
+    color: #203239;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+   }
+
+
+/* Banner area End ..  */
+
+
+
+/* Property start  */
+
+#Property-part{
+    padding: 64px;
+}
+
+#Property-part h2{
+   font-family: 'Poppins', sans-serif;
+   width: 533px;
+   height: 108px;
+   color: #203239;
+   font-weight: 600;
+}
+
+#Property-part .item{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    border: 1px solid #EEEDDE;
+    padding: 25px;
+
+    position: relative;
+}
+
+#Property-part .item h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    width: 150px;
+    height: 24px;
+    
+}
+
+#Property-part .item h1::after{
+    position: absolute;
+    content: "";
+    left: 0;    
+    top: 17px;
+    width: 7px;
+    height: 32px;
+    background-color: #FF7527;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+
+#Property-part .item h1 span{
+    color: #FF7527;
+    font-size: 16px;
+    position: absolute;
+    right: 23px;
+    top: 26px;
+}
+
+#Property-part .item p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    width: 236px;
+    height: 150px;
+    color: #848E92;
+}
+
+#Property-part .item a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    width: 139px;
+    height: 24px;
+    color: #848E92;
+    position: relative;
+}
+
+#Property-part .item a::after{
+   position: absolute;
+   content: "";
+   left: 0;
+   top: 0;
+   width: 40%;
+   height: 30px;
+   background-color: #D6D5C7;
+   z-index: -1;
+   transition: .4s;
+}
+
+#Property-part .item a:hover:after{
+    width: 100%;
+}
+
+#Property-part .item a i{
+    margin-left: 5px;
+    color: #848E92;
+} 
+
+/* Property End  */
+
+
+
+/* Residence area start */
+
+#Residen_are{
+    background-color: #EEEDDE;
+    padding: 60px 0px;
+    padding-bottom: 161px;
+    overflow: hidden;
+}
+
+#Residen_are .title{
+    margin-bottom: 46px;
+}
+
+#Residen_are .title h2{
+    font-family: 'Poppins', sans-serif;
+    color: #FF7527;
+    font-size: 16px;
+    font-weight: 500;
+    width: 144px;
+    height: 24px;
+}
+
+#Residen_are .title h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    width: 281px;
+    height: 54px;
+}
+
+#Residen_are .text h1{
+    font-family: 'Poppins', sans-serif;
+    color: #203239;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 150%;
+}
+
+#Residen_are .text p{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #203239; 
+    line-height: 30px;
+}
+
+
+#Residen_are .img-are{
+    position: relative;
+}
+
+#Residen_are .img-are .frontimg{
+    position: absolute;
+    top: 71px;
+    right: 0;
+}
+
+#Residen_are .residen_button button{
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 15px 50px;
+    margin-right: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #203239;
+    margin-top: 20px;
+    transition: .4s;
+
+    position: relative;
+    z-index: 1;
+}
+
+#Residen_are .residen_button button::after{
+   position: absolute;
+   content: "";
+   left: 0;
+   top:0;
+   width: 0%;
+   height: 100%;
+   border-radius: 10px;
+   background-color: #203239;
+   z-index: -1;
+
+}
+    /* Button Hover Effect.. */
+
+#Residen_are .residen_button button:hover:after{
+   width: 100%;
+   height: 100%;
+   transition: all 400ms ease-out 0s;
+   color: #fff !important;
+   background-color: #2032392a;
+   z-index: 1;
+}
+
+#Residen_are .residen_button i{
+    position: absolute;
+    left: 25px;
+    top: 19px;
+}
+
+
+/* Residence area End. */
+
+
+
+
+/* Residen Berbagai start */
+
+#residen_Berbagai{
+    background-color: #fff;
+    padding: 60px 0px;
+    padding-bottom: 161px;
+}
+
+#residen_Berbagai .title{
+    margin-bottom: 46px;
+}
+
+#residen_Berbagai .title h2{
+    font-family: 'Poppins', sans-serif;
+    color: #FF7527;
+    font-size: 16px;
+    font-weight: 500;
+    width: 144px;
+    height: 24px;
+}
+
+#residen_Berbagai .title h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    width: 281px;
+    height: 54px;
+}
+
+#residen_Berbagai .text h1{
+    font-family: 'Poppins', sans-serif;
+    color: #203239;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 150%;
+}
+
+#residen_Berbagai .icons i{
+    color: #F6762E;
+    border-radius: 4px;
+    border: 1px solid #D6D5C7;
+    padding: 6px 10px;
+}
+
+#residen_Berbagai .icons i:hover{
+    background-color: #F3F2EE;
+}
+
+
+#residen_Berbagai .box-item {}
+
+#residen_Berbagai .box-item h1{
+    margin-top: 25px;
+    font-family: 'Poppins', sans-serif;
+    width: 262px;
+    height: 36px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#residen_Berbagai .box-item p{
+    font-family: 'Poppins', sans-serif;
+    color: #203239;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* Residen Berbagai End */
+
+#Hubungi_kami{
+    background-color: #EEEDDE;
+    padding: 50px;
+}
+
+#Hubungi_kami h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#Hubungi_kami .text_ara h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #203239;
+    width: 261px;
+}
+
+#Hubungi_kami .text_ara{
+    display: flex;
+    margin-left: 2px;
+    margin-top: 45px;
+}
+
+#Hubungi_kami .call_item{
+    border-radius: 10px;
+    border: 1px solid #FF7527;
+    padding: 25px 25px;
+    margin-right: 20px;
+}
+
+#Hubungi_kami .email-item{
+    border-radius: 5px;
+    border: 1px solid #FF7527;
+}
+
+#Hubungi_kami .text_ara h4{
+    font-size: 16px;
+    color: #203239;
+}
+
+#Hubungi_kami .text_ara h3{
+    font-size: 14px;
+    width: 131px;
+    height: 24px;
+}
+
+#Hubungi_kami .text_ara button{
+    background-color: #F4C29C;
+    color: #FF7527;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 43px;
+    border-radius: 10px;
+    border: 1px solid #F4C29C;
+    transition: .4s;
+}
+
+#Hubungi_kami .text_ara button:hover{
+  background-color: #F6762E;  
+  color: #fff;
+}
+
+footer{
+    background-color: #203239;
+    padding: 10px 25px;
+}
+
+footer .social-icon i{
+    color: #fff;
+    margin-right: 60px;
+}
